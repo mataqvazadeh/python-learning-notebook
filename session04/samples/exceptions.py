@@ -5,7 +5,7 @@ try:
     print(a/b)
 
     # f = open('nothin')
-except ZeroDivisionError:
+except (ZeroDivisionError, OverflowError) as e:
     print('ERROR: Not a Number')
     raise
 except  ValueError as exp:
