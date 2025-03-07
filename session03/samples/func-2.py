@@ -31,4 +31,5 @@ def divider(a, b):
 
     return quotient, remainder
 
-print(divider(5 , 2))
+result = divider(5 , 2)
+print(result)
