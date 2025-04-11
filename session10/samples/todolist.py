@@ -1,3 +1,10 @@
+# composition => TodoList 'has-a' Task
+# inheritance => Duck 'is-a' Animal
+# Car, Engine
+# Car, Bus
+
+# DRY = Don't Reaped Yourself
+
 class Task:
     def __init__(self, text):
         self.text = text
