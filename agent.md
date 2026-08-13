@@ -4,7 +4,7 @@ Context file for AI agents working in this repository.
 
 ## Project Summary
 
-A public GitHub repository of reusable Jupyter notebooks for teaching and learning Python programming. It has been used across multiple cohorts and is not tied to one specific course. The material currently contains 44 numbered sessions, progressing from Python fundamentals through Linux, databases, Django, Django REST Framework, Redis/Celery, and deployment.
+A public GitHub repository of reusable Jupyter notebooks for teaching and learning Python and backend development. It has been used across multiple cohorts and is not tied to one specific course. The material currently contains 44 numbered sessions, progressing from Python fundamentals through Git/GitHub, Linux, databases and PostgreSQL, Django and Django REST Framework (DRF) as Python backend frameworks, Redis/Celery, and deployment.
 
 `AGENTS.md` and `CLAUDE.md` are lightweight entry points that should point back to this file. Keep this file as the single source of truth for agent guidance.
 
