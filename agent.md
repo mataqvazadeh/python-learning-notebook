@@ -4,7 +4,9 @@ Context file for AI agents working in this repository.
 
 ## Project Summary
 
-A Jupyter notebook course repository for teaching Python programming (Maktab 141). The course currently contains 44 numbered sessions, progressing from Python fundamentals through Linux, databases, Django, Django REST Framework, Redis/Celery, and deployment.
+A public GitHub repository of reusable Jupyter notebooks for teaching and learning Python programming. It has been used across multiple cohorts and is not tied to one specific course. The material currently contains 44 numbered sessions, progressing from Python fundamentals through Linux, databases, Django, Django REST Framework, Redis/Celery, and deployment.
+
+`AGENTS.md` and `CLAUDE.md` are lightweight entry points that should point back to this file. Keep this file as the single source of truth for agent guidance.
 
 ## Environment
 
@@ -64,12 +66,14 @@ A Jupyter notebook course repository for teaching Python programming (Maktab 141
 
 - All teaching content lives in `.ipynb` files — prefer editing notebooks over creating standalone scripts
 - No test suite or linter is configured; `requirement.txt` is pinned and should not be changed without explicit instruction
+- `requirement.txt` mainly describes the Jupyter/notebook runtime. Later topics such as Django, DRF, Redis, Celery, PostgreSQL, and deployment may be taught without every dependency being globally pinned here.
 - The `session*` folder numbering must stay sequential and consistent with the notebook naming convention above
 - Keep notebooks valid JSON. Prefer structured notebook-aware tooling when making broad changes.
 - Preserve educational tone and examples. This is a teaching repository, not an application codebase.
 - Keep `samples/` files small and aligned with the notebook that references them.
 - Do not remove or rename images without checking notebook references.
-- Avoid changing generated notebook metadata unless the task requires it.
+- Avoid changing generated notebook metadata, execution counts, outputs, kernelspec, or language metadata unless the task requires it.
+- Commit messages use the repository's existing short, capitalized style, for example `Update agent project guidance`, `Add sessions 39-44: ...`, or `Fix whitespace in OOP notebook`.
 
 ## Useful Commands
 
@@ -77,6 +81,8 @@ A Jupyter notebook course repository for teaching Python programming (Maktab 141
 pip install -r requirement.txt
 jupyter lab
 jupyter notebook
+python3 -m json.tool path/to/notebook.ipynb >/dev/null
+git diff --check
 ```
 
 Open a specific notebook:
@@ -91,6 +97,8 @@ Quick inventory checks:
 find . -maxdepth 2 -type f -path './session*/*.ipynb' | sort
 find . -maxdepth 3 -type f \( -path './session*/samples/*' -o -path './session*/images/*' \) | sort
 ```
+
+For broad notebook edits, validate every changed `.ipynb` file with `python3 -m json.tool`.
 
 ## Git History Notes
 
