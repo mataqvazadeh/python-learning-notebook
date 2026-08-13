@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual machines versus Docker containers</title>
+  <desc id="desc">Side-by-side architecture diagram comparing virtual machines with Docker containers. Virtual machines include a hypervisor and separate guest operating systems. Docker containers share the host operating system kernel and run isolated app processes with their dependencies.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #1f2937; }
+      .subtitle { font: 600 22px Arial, sans-serif; fill: #111827; }
+      .label { font: 500 17px Arial, sans-serif; fill: #111827; }
+      .small { font: 15px Arial, sans-serif; fill: #374151; }
+      .tiny { font: 13px Arial, sans-serif; fill: #4b5563; }
+      .box { stroke: #374151; stroke-width: 2; rx: 12; ry: 12; }
+      .vm { fill: #fee2e2; }
+      .docker { fill: #dbeafe; }
+      .host { fill: #e5e7eb; }
+      .hardware { fill: #d1d5db; }
+      .app { fill: #ffffff; }
+      .os { fill: #fef3c7; }
+      .engine { fill: #bfdbfe; }
+      .hypervisor { fill: #fecaca; }
+      .note { fill: #ecfdf5; stroke: #059669; stroke-width: 2; rx: 10; ry: 10; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="620" fill="#f8fafc"/>
+  <text x="550" y="48" text-anchor="middle" class="title">Virtual Machines vs Docker Containers</text>
+
+  <!-- Left: VM -->
+  <text x="275" y="95" text-anchor="middle" class="subtitle">Virtual Machines</text>
+  <rect x="55" y="115" width="440" height="430" class="box vm"/>
+
+  <rect x="85" y="140" width="180" height="190" class="box app"/>
+  <text x="175" y="168" text-anchor="middle" class="label">VM 1</text>
+  <rect x="110" y="190" width="130" height="42" class="box app"/>
+  <text x="175" y="216" text-anchor="middle" class="small">App A</text>
+  <rect x="110" y="242" width="130" height="42" class="box app"/>
+  <text x="175" y="268" text-anchor="middle" class="small">Dependencies</text>
+  <rect x="110" y="294" width="130" height="26" class="box os"/>
+  <text x="175" y="313" text-anchor="middle" class="tiny">Guest OS</text>
+
+  <rect x="285" y="140" width="180" height="190" class="box app"/>
+  <text x="375" y="168" text-anchor="middle" class="label">VM 2</text>
+  <rect x="310" y="190" width="130" height="42" class="box app"/>
+  <text x="375" y="216" text-anchor="middle" class="small">App B</text>
+  <rect x="310" y="242" width="130" height="42" class="box app"/>
+  <text x="375" y="268" text-anchor="middle" class="small">Dependencies</text>
+  <rect x="310" y="294" width="130" height="26" class="box os"/>
+  <text x="375" y="313" text-anchor="middle" class="tiny">Guest OS</text>
+
+  <rect x="85" y="350" width="380" height="48" class="box hypervisor"/>
+  <text x="275" y="381" text-anchor="middle" class="label">Hypervisor</text>
+  <rect x="85" y="415" width="380" height="48" class="box host"/>
+  <text x="275" y="446" text-anchor="middle" class="label">Host Operating System</text>
+  <rect x="85" y="480" width="380" height="42" class="box hardware"/>
+  <text x="275" y="507" text-anchor="middle" class="label">Hardware</text>
+
+  <!-- Right: Docker -->
+  <text x="825" y="95" text-anchor="middle" class="subtitle">Docker Containers</text>
+  <rect x="605" y="115" width="440" height="430" class="box docker"/>
+
+  <rect x="635" y="140" width="120" height="150" class="box app"/>
+  <text x="695" y="168" text-anchor="middle" class="label">Container 1</text>
+  <rect x="655" y="195" width="80" height="36" class="box app"/>
+  <text x="695" y="218" text-anchor="middle" class="small">App A</text>
+  <rect x="655" y="240" width="80" height="36" class="box app"/>
+  <text x="695" y="263" text-anchor="middle" class="tiny">Deps</text>
+
+  <rect x="765" y="140" width="120" height="150" class="box app"/>
+  <text x="825" y="168" text-anchor="middle" class="label">Container 2</text>
+  <rect x="785" y="195" width="80" height="36" class="box app"/>
+  <text x="825" y="218" text-anchor="middle" class="small">App B</text>
+  <rect x="785" y="240" width="80" height="36" class="box app"/>
+  <text x="825" y="263" text-anchor="middle" class="tiny">Deps</text>
+
+  <rect x="895" y="140" width="120" height="150" class="box app"/>
+  <text x="955" y="168" text-anchor="middle" class="label">Container 3</text>
+  <rect x="915" y="195" width="80" height="36" class="box app"/>
+  <text x="955" y="218" text-anchor="middle" class="small">App C</text>
+  <rect x="915" y="240" width="80" height="36" class="box app"/>
+  <text x="955" y="263" text-anchor="middle" class="tiny">Deps</text>
+
+  <rect x="635" y="315" width="380" height="50" class="box engine"/>
+  <text x="825" y="347" text-anchor="middle" class="label">Docker Engine</text>
+  <rect x="635" y="385" width="380" height="60" class="box host"/>
+  <text x="825" y="410" text-anchor="middle" class="label">Host Operating System</text>
+  <text x="825" y="432" text-anchor="middle" class="tiny">containers share the host kernel</text>
+  <rect x="635" y="480" width="380" height="42" class="box hardware"/>
+  <text x="825" y="507" text-anchor="middle" class="label">Hardware</text>
+
+  <!-- Notes -->
+  <rect x="80" y="560" width="390" height="42" class="note"/>
+  <text x="275" y="586" text-anchor="middle" class="small">Each VM includes its own guest OS → heavier</text>
+
+  <rect x="630" y="560" width="390" height="42" class="note"/>
+  <text x="825" y="586" text-anchor="middle" class="small">Containers share host kernel → lighter and faster</text>
+</svg>

@@ -1,6 +1,6 @@
 # Python & Backend Development Notebooks
 
-A public, reusable collection of Jupyter notebooks for teaching and learning Python and backend development. The material starts with Python fundamentals and grows into practical backend topics: Git and GitHub, Linux, databases and PostgreSQL, Django and Django REST Framework (DRF) as Python backend frameworks, Redis/Celery, and deployment. It is organized as sequential sessions and is not tied to one specific course or cohort.
+A public, reusable collection of Jupyter notebooks for teaching and learning Python and backend development. The material starts with Python fundamentals and grows into practical backend topics: Git and GitHub, Linux, databases and PostgreSQL, Django and Django REST Framework (DRF) as Python backend frameworks, Redis/Celery, Docker, and deployment. It is organized as sequential sessions and is not tied to one specific course or cohort.
 
 ## Topics Covered
 
@@ -20,6 +20,7 @@ A public, reusable collection of Jupyter notebooks for teaching and learning Pyt
 | 32–41 | Django REST Framework: intro, class/generic views, viewsets/routers, serializers/testing, filtering/search/ordering, pagination, Swagger/OpenAPI docs, permissions, token auth, JWT |
 | 42–43 | Redis, Django caching, Celery |
 | 44 | Deployment with Nginx, Gunicorn, PostgreSQL, systemd, static/media handling |
+| 45 | Docker fundamentals: containers, images, volumes, Dockerfile, custom images, Docker Compose |
 
 ## Repository Structure
 
