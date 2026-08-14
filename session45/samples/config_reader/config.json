@@ -1,0 +1,6 @@
+{
+  "app_name": "Docker Config Demo",
+  "environment": "development",
+  "debug": true,
+  "version": "1.0.0"
+}
