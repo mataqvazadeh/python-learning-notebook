@@ -4,7 +4,7 @@ Context file for AI agents working in this repository.
 
 ## Project Summary
 
-A public GitHub repository of reusable Jupyter notebooks for teaching and learning Python and backend development. It has been used across multiple cohorts and is not tied to one specific course. The material currently contains 45 numbered sessions, progressing from Python fundamentals through Git/GitHub, Linux, databases and PostgreSQL, Django and Django REST Framework (DRF) as Python backend frameworks, Redis/Celery, Docker, and deployment.
+A public GitHub repository of reusable Jupyter notebooks for teaching and learning Python and backend development. It has been used across multiple cohorts and is not tied to one specific course. The material currently contains 46 numbered sessions, progressing from Python fundamentals through Git/GitHub, Linux, databases and PostgreSQL, Django and Django REST Framework (DRF) as Python backend frameworks, Redis/Celery, Docker, and deployment.
 
 `AGENTS.md` and `CLAUDE.md` are lightweight entry points that should point back to this file. Keep this file as the single source of truth for agent guidance.
 
@@ -36,6 +36,7 @@ A public GitHub repository of reusable Jupyter notebooks for teaching and learni
 | 42–43 | Redis, Django caching, Celery |
 | 44 | Deployment with Nginx, Gunicorn, PostgreSQL, systemd, static/media handling |
 | 45 | Docker fundamentals: containers, images, volumes, Dockerfile, custom images, Docker Compose |
+| 46 | Dockerized Django: Django/PostgreSQL Compose setup, production-style deployment with Nginx, Gunicorn, Redis, Celery |
 
 ## Current Notebook Inventory
 
@@ -55,6 +56,7 @@ A public GitHub repository of reusable Jupyter notebooks for teaching and learni
 | 32-41 | DRF notebooks |
 | 42-44 | caching/Redis, Celery, deployment |
 | 45 | Docker basics, Dockerfile/custom images, Docker Compose |
+| 46 | Dockerizing Django and Dockerized Django deployment |
 
 ## File Conventions
 

@@ -21,6 +21,7 @@ A public, reusable collection of Jupyter notebooks for teaching and learning Pyt
 | 42–43 | Redis, Django caching, Celery |
 | 44 | Deployment with Nginx, Gunicorn, PostgreSQL, systemd, static/media handling |
 | 45 | Docker fundamentals: containers, images, volumes, Dockerfile, custom images, Docker Compose |
+| 46 | Dockerized Django: Django/PostgreSQL Compose setup, production-style deployment with Nginx, Gunicorn, Redis, Celery |
 
 ## Repository Structure
 
