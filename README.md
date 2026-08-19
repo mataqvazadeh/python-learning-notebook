@@ -28,10 +28,10 @@ This repository is organized as sequential sessions and is not tied to one speci
 
 ## Repository Structure
 
-- `sessionNN/` — numbered session folders.
+- `sessions/sessionNN/` — numbered session folders.
 - `*.ipynb` — teaching notebooks. Names usually follow `S<session>[P<part>]-<Topic>.ipynb`.
-- `sessionNN/samples/` — small runnable examples used by notebooks.
-- `sessionNN/images/` — image assets referenced by notebooks.
+- `sessions/sessionNN/samples/` — small runnable examples used by notebooks.
+- `sessions/sessionNN/images/` — image assets referenced by notebooks.
 - `docs/` — roadmap, session index, study guide, and sample index.
 - `requirement.txt` — pinned dependencies for the Jupyter/notebook environment.
 
@@ -58,7 +58,7 @@ jupyter notebook
 Open a specific notebook directly:
 
 ```bash
-jupyter lab session45/S45P01-DockerBasics.ipynb
+jupyter lab sessions/session45/S45P01-DockerBasics.ipynb
 ```
 
 ## Notes

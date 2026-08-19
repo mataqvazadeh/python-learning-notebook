@@ -70,8 +70,8 @@ Keep the root `README.md` compact; GitHub's repository root already requires scr
 ## File Conventions
 
 - Notebooks: `S<session>[P<part>]-<Topic>.ipynb` (e.g. `S11P01-BigO.ipynb`, `S09-OOP.ipynb`)
+- Session folders live under `sessions/` and use the format `sessions/sessionNN`, where `NN` is a two-digit sequential number.
 - Each session folder may have `samples/` (runnable `.py` files) and `images/` (referenced in notebooks)
-- Session folders use the format `sessionNN`, where `NN` is a two-digit sequential number.
 - Some older filenames contain typos or historical naming choices, for example `StringFormating` and `AdvancePython`; preserve existing names unless explicitly asked to rename.
 - `session16` currently has two `P02` notebooks: `S16P02-IntroPostgreSQL.ipynb` and `S16P02-IntroSQL.ipynb`. Treat this as existing course structure unless asked to renumber.
 
@@ -80,7 +80,7 @@ Keep the root `README.md` compact; GitHub's repository root already requires scr
 - All teaching content lives in `.ipynb` files — prefer editing notebooks over creating standalone scripts
 - No test suite or linter is configured; `requirement.txt` is pinned and should not be changed without explicit instruction
 - `requirement.txt` mainly describes the Jupyter/notebook runtime. Later topics such as Django, DRF, Redis, Celery, PostgreSQL, and deployment may be taught without every dependency being globally pinned here.
-- The `session*` folder numbering must stay sequential and consistent with the notebook naming convention above
+- The `sessions/session*` folder numbering must stay sequential and consistent with the notebook naming convention above
 - Keep notebooks valid JSON. Prefer structured notebook-aware tooling when making broad changes.
 - Preserve educational tone and examples. This is a teaching repository, not an application codebase.
 - Keep `samples/` files small and aligned with the notebook that references them.
@@ -101,14 +101,14 @@ git diff --check
 Open a specific notebook:
 
 ```bash
-jupyter lab session32/S32-DRFIntro.ipynb
+jupyter lab sessions/session32/S32-DRFIntro.ipynb
 ```
 
 Quick inventory checks:
 
 ```bash
-find . -maxdepth 2 -type f -path './session*/*.ipynb' | sort
-find . -maxdepth 3 -type f \( -path './session*/samples/*' -o -path './session*/images/*' \) | sort
+find . -maxdepth 3 -type f -path './sessions/session*/*.ipynb' | sort
+find . -maxdepth 4 -type f \( -path './sessions/session*/samples/*' -o -path './sessions/session*/images/*' \) | sort
 ```
 
 For broad notebook edits, validate every changed `.ipynb` file with `python3 -m json.tool`.

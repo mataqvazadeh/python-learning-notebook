@@ -33,7 +33,7 @@ jupyter notebook
 Open a specific notebook:
 
 ```bash
-jupyter lab session45/S45P01-DockerBasics.ipynb
+jupyter lab sessions/session45/S45P01-DockerBasics.ipynb
 ```
 
 ## Extra Tools by Topic
