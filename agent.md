@@ -19,6 +19,15 @@ A public GitHub repository of reusable Jupyter notebooks for teaching and learni
 
 ## Content Map
 
+Public-facing detailed indexes live in `docs/`:
+
+- `docs/roadmap.md` — learning path and stages
+- `docs/sessions.md` — compact session/notebook index
+- `docs/how-to-study.md` — student usage guide
+- `docs/samples.md` — runnable sample projects index
+
+Keep the root `README.md` compact; GitHub's repository root already requires scrolling because of many session folders.
+
 | Sessions | Topics |
 |----------|--------|
 | 01–04 | Python and computing basics: history, requirements, types, variables, operators, control flow, functions, PEPs, modules, encoding, file I/O, exceptions, numbering systems |
