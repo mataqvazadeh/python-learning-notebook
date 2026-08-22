@@ -20,6 +20,7 @@ Some early samples are small single-file classroom examples. Newer Docker sample
 | 15 | Advanced Python samples | 3 |
 | 17 | SQL samples | 3 |
 | 45 | Docker and Docker Compose samples | 26 |
+| 46 | Dockerized Django deployment helper scripts | 1 |
 
 ## Complete Sample File Inventory
 
@@ -143,6 +144,10 @@ Some early samples are small single-file classroom examples. Newer Docker sample
 - `sessions/session45/samples/simple_http/Dockerfile`
 - `sessions/session45/samples/simple_http/server.py`
 
+### session46 — Dockerized Django deployment helper scripts
+
+- `sessions/session46/samples/entrypoint.sh`
+
 ## Structured Docker Samples
 
 | Path | Used by | Purpose |
@@ -154,6 +159,7 @@ Some early samples are small single-file classroom examples. Newer Docker sample
 | `sessions/session45/samples/simple_http/` | `S45P02-DockerfileImages.ipynb` | Request/response and port mapping |
 | `sessions/session45/samples/compose_redis_logger/` | `S45P03-DockerCompose.ipynb` | Multi-container Compose project with Python + Redis |
 | `sessions/session45/samples/compose_postgres_logger/` | `S45P03-DockerCompose.ipynb` | Optional Compose exercise with Python + PostgreSQL + volume |
+| `sessions/session46/samples/entrypoint.sh` | `S46P02-DockerizedDeployment.ipynb` | Startup wrapper for waiting on PostgreSQL, migrations, and static files |
 
 ## How to Run Samples
 
